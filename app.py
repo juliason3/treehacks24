@@ -23,5 +23,14 @@ class User(db.Model):
 @app.route('/') 
 def hello_world():    
     return 'Hello, World!'  
+
+
+#adding a new user to the database (SQLAlchemy)
+@app.route('/register') #route /register to add a new user to database, this connects it to flask
+def register():
+    new_user = User(username='john doe', email= 'john@example.com')
+    db.session.add(new_user)
+    db.session.commit()
+    return 'User registered successfully!'
 if __name__ == '__main__':     
     app.run(debug=True)
