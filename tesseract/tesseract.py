@@ -1,6 +1,7 @@
 import cv2
 import pytesseract
 from fuzzywuzzy import fuzz
+import pandas as pd
 import sqlite3
 import csv
 
@@ -24,12 +25,8 @@ except sqlite3.Error as err:
 
 # Function to load chemical ingredients from CSV
 def load_chemicals_from_csv(filename):
-    chemicals = []
-    with open(filename, newline='', encoding='utf-8') as csvfile:
-        reader = csv.reader(csvfile)
-        next(reader)  # Skip the header row
-        for row in reader:
-            chemicals.append(row[1].lower())  # Convert to lowercase for case-insensitive comparison
+    chemicals = pd.read_csv(filename)
+    chemicals['Ingredient'] = chemicals['Ingredient'].str.lower()  # Convert to lowercase for case-insensitive comparison
     return chemicals
 
 # Set the path to Tesseract executable
@@ -44,35 +41,27 @@ def extract_text(image_path):
     return text
 
 # Extract ingredients from text
-def extract_specific_words(text):
-    ingredients_section = False
+def extract_specific_words(text, chemical_ingredients):
     ingredients = []
-
-    # Join lines with hyphenated words to handle split words
-    text_lines = text.split('\n')
-    for i in range(len(text_lines) - 1):
-        if text_lines[i].endswith('-'):
-            text_lines[i] = text_lines[i][:-1] + text_lines[i+1]
-            text_lines[i+1] = ''
-
-    for line in text_lines:
-        # Check for active ingredients section
-        if fuzz.partial_ratio(line.lower(), 'ingredient') >= 70:
-            ingredients_section = True
-            continue
-
-        # Extract words from active ingredients section
-        if ingredients_section:
-            ingredients.extend(line.split())
-
+    for word in text.split():
+        word_lower = word.lower()
+        best_match = chemical_ingredients[chemical_ingredients['Ingredient'].apply(lambda x: fuzz.partial_ratio(word_lower, x)) >= 90]
+        if not best_match.empty:
+            ingredients.append(best_match.iloc[0])
     return ingredients
 
+# Calculate the overall percentage based on ratings
+def calculate_overall_percentage(ingredients):
+    bad_count = sum(1 for ingredient in ingredients if ingredient['Rating'] == "Bad")
+    worst_count = sum(2 for ingredient in ingredients if ingredient['Rating'] == "Worst")
+    overall_percentage = ((100 - (bad_count) - (worst_count)))
+    return overall_percentage
 
 # Store ingredients in the database
 def store_data(ingredients, rating, warning):
     try:
         for ingredient in ingredients:
-            cursor.execute("INSERT INTO ingredients (ingredient_name, rating, warning) VALUES (?, ?, ?)", (ingredient, rating, warning))
+            cursor.execute("INSERT INTO ingredients (ingredient_name, rating, warning) VALUES (?, ?, ?)", (ingredient['Ingredient'], rating, warning))
         connection.commit()
         print("Ingredients stored successfully")
     except sqlite3.Error as err:
@@ -85,23 +74,26 @@ if __name__ == "__main__":
     chemical_ingredients = load_chemicals_from_csv("C:\\Users\\vijdi\\OneDrive\\Desktop\\CSProjects\\sunscreenify\\treehacks24\\tesseract\\safetydata.csv")
 
     # Extract text from image
-    image_path = "C:\\Users\\vijdi\\OneDrive\\Desktop\\CSProjects\\sunscreenify\\treehacks24\\tesseract\\lacolors.webp"
+    image_path = "C:\\Users\\vijdi\\OneDrive\\Desktop\\CSProjects\\sunscreenify\\treehacks24\\tesseract\\goodsense.jpg"
     text = extract_text(image_path)
+    print("Extracted Text:")
+    print(text)
 
     # Extract ingredients from text
-    ingredients = extract_specific_words(text)
+    ingredients = extract_specific_words(text, chemical_ingredients)
+    print("Extracted Ingredients:")
+    print(ingredients)
+    
     if ingredients:
-        # Compare extracted ingredients with chemical ingredients
-        matching_ingredients = [ingredient for ingredient in ingredients if any(fuzz.partial_ratio(ingredient.lower(), chemical.lower()) >= 70 for chemical in chemical_ingredients)]
-
         # Store matching ingredients in the database
-        if matching_ingredients:
-            # Find corresponding rating and warning for each ingredient from the CSV
-            with open("C:\\Users\\vijdi\\OneDrive\\Desktop\\CSProjects\\sunscreenify\\treehacks24\\tesseract\\safetydata.csv", newline='', encoding='utf-8') as csvfile:
-                reader = csv.DictReader(csvfile)
-                for row in reader:
-                    if row['Ingredient'].lower() in matching_ingredients:
-                        store_data([row['Ingredient']], row['Rating'], row['Warning'])
+        store_data(ingredients, rating="N/A", warning="N/A")
+
+    # Display overall percentage
+    if not ingredients:
+        print("No ingredients extracted.")
+    else:
+        overall_percentage = calculate_overall_percentage(ingredients)
+        print("Overall Percentage:", overall_percentage)
 
 # Close the cursor and connection
 cursor.close()
