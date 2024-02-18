@@ -40,7 +40,7 @@ export default function Home() {
     data.append('image', formData.image);
 
     // Replace '/api/submit-form' with your actual Flask endpoint
-    const response = await fetch('/api/submit-form', {
+    const response = await fetch('/api/upload', {
       method: 'POST',
       body: data,
     });
