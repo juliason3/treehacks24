@@ -3,7 +3,9 @@ import pytesseract
 from fuzzywuzzy import fuzz
 import pandas as pd
 import sqlite3
-import csv
+from flask import Flask, request
+
+app = Flask(__name__)
 
 # Connect to the SQLite database
 connection = sqlite3.connect("safety_database.db")
@@ -30,12 +32,11 @@ def load_chemicals_from_csv(filename):
     return chemicals
 
 # Set the path to Tesseract executable
-#pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Extract text from image using pytesseract
-def extract_text(image_path):
-    img = cv2.imread(image_path)
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+def extract_text(image):
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     threshold_img = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
     text = pytesseract.image_to_string(threshold_img)
     return text
@@ -68,14 +69,23 @@ def store_data(ingredients, rating, warning):
         print(f"Error storing data: {err}")
         connection.rollback()
 
-# Example usage
-if __name__ == "__main__":
+# Flask endpoint to handle image upload and processing
+@app.route('/api/upload', methods=['POST'])
+def upload_image():
+    # Check if request contains file data
+    if 'image' not in request.files:
+        return 'No image file uploaded', 400
+
+    image_file = request.files['image']
+
+    # Read the image file
+    image = cv2.imdecode(numpy.fromstring(image_file.read(), numpy.uint8), cv2.IMREAD_UNCHANGED)
+
     # Load chemical ingredients from CSV
-    chemical_ingredients = load_chemicals_from_csv("/Users/kyliebach/treehacks24/tesseract/safetydata.csv")
+    chemical_ingredients = load_chemicals_from_csv("C:\\Users\\vijdi\\OneDrive\\Desktop\\CSProjects\\sunscreenify\\treehacks24\\tesseract\\safetydata.csv")
 
     # Extract text from image
-    image_path = "/Users/kyliebach/treehacks24/tesseract/goodsense.jpg"
-    text = extract_text(image_path)
+    text = extract_text(image)
     print("Extracted Text:")
     print(text)
 
@@ -83,18 +93,17 @@ if __name__ == "__main__":
     ingredients = extract_specific_words(text, chemical_ingredients)
     print("Extracted Ingredients:")
     print(ingredients)
-    
+
     if ingredients:
         # Store matching ingredients in the database
         store_data(ingredients, rating="N/A", warning="N/A")
 
     # Display overall percentage
     if not ingredients:
-        print("No ingredients extracted.")
+        return "No ingredients extracted.", 200
     else:
         overall_percentage = calculate_overall_percentage(ingredients)
-        print("Overall Percentage:", overall_percentage)
+        return f"Overall Percentage: {overall_percentage}", 200
 
-# Close the cursor and connection
-cursor.close()
-connection.close()
+if __name__ == "__main__":
+    app.run(debug=True)
