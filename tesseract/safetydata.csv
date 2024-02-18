@@ -1,0 +1,321 @@
+Rating,Ingredient,Warning
+Bad,Acetic Acid,This type of acid is a major component of vinegar and can cause skin irritation.
+Bad,Alkyloamides,"Identified on skin care product labels as DEA, triethanolamine (TEA), and monoethanolamine (MEA)."
+Bad,Apricot Kernel,"Often used as an abrasive agent in so-called ""natural"" scrubs."
+Bad,Asimina Triloba Fruit Extract,"This plant extract, also known as pawpaw, has antioxidant properties but can also irritate skin."
+Bad,Blue Tansy,"A potentially sensitizing, fragrant essential oil used for its colorant, scent, and antioxidant properties."
+Bad,Calendula Officinalis Flower Oil,The volatile oil taken from Calendula officinalis flowers. Contains skin-sensitizing fragrant compounds but also has antioxidant properties.
+Bad,Cocamide DEA And MEA,"Both cocamide DEA (diethanolamine) and MEA (monoethanolamine) are widely used ingredients to thicken the water phase of cosmetics, keep ingredients blended, and boost foaming properties..."
+Bad,Colloidal Sulfur,"Possesses anti-acne properties but can also irritate skin when applied topically. Has smaller particles than sulfur, making it more potent."
+Bad,Diamond Powder,Diamond powder is an abrasive mineral used in skin care products such as exfoliating cleansers where it provides buffing/scrubbing action.
+Bad,Diatomaceous Earth,Light-colored porous rock composed of the skeletons of minute sea creatures called diatoms.
+Bad,Diazolidinyl Urea,Water-soluble preservative.
+Bad,Dicalcium Phosphate,White powder that can be used to create abrasive formulations (not recommended) or can be formulated in a way that lends opacity to makeup (which is not problematic).
+Bad,Dimethyl MEA,"Controversial ingredient for skin because research has shown conflicting results. It seems to offer an initial benefit that improves skin firmness, but these results are short-lived and eventually give way to destruction of the substances in skin that help keep it firm."
+Bad,DMAE,"Controversial ingredient for skin because research has shown conflicting results. It seems to offer an initial benefit that improves skin firmness, but these results are short-lived and eventually give way to destruction of the substances in skin that help keep it firm."
+Bad,DMDM Hydantoin,Formaldehyde-releasing preservative.
+Bad,Farnesol,Extract of plants that is used in cosmetics primarily for fragrance.
+Bad,Farnesyl Acetate,Ingredient used in cosmetics primarily for fragrance.
+Bad,Formaldehyde-Releasing Preservative,Common type of preservative found in cosmetics.
+Bad,Geraniol,"A volatile fragrance ingredient extracted from geranium, geraniol is capable of causing sensitivity when applied to skin."
+Bad,Gold,Metallic element whose skin care benefits remain unproven. Potential source of skin irritation.
+Bad,Hoya Lacunosa Flower Extract,"Extract derived from the flowers of the Hoya lacunosa plant, whose fragrant compounds pose a risk of skin sensitization."
+Bad,Hydroxyethylpiperazine Ethane Sulfonic Acid,"Also known by the acronym HEPES, hydroxyethylpiperazine ethane sulfonic acid is a buffering ingredient typically used to establish a neutral pH in water-based solutions."
+Bad,Imidazolidinyl Urea,"Considered a weaker preservative than its ""cousin"" diazolidinyl urea."
+Bad,Iron Powder,"Iron powder is, as the name states, a powdered versoin of the mineral iron. A natural ingredient, it's used as an opacifying agent in cosmetics."
+Bad,MEA,Abbreviation for monoethanolamine.
+Bad,Melia Azadirachta Oil,"Plant-derived oil, AKA neem oil, that has potent active compounds that can sensitize skin."
+Bad,Methyldihydrojasmonate,"Methyldihydrojasmonate is a fragrant compound used in skin care for its floral, jasmine-like scent. Like other fragrances, it can cause skin sensitization."
+Bad,Mimosa Oil Or Extract,"Mimosa oil or extract are fragrant, antioxidant ingredients derived from the Acacia dealbata plant. Their aromatic compounds can cause skin sensitization."
+Bad,Myrtle Extract,"Antioxidant and antimicrobial ingredient, AKA Myrtus communis extract, that also contains volatile, sensitizing aromatic compounds."
+Bad,Myrtus Communis Extract,"Antioxidant and antimicrobial ingredient that contains volatile, sensitizing aromatic compounds."
+Bad,Neem Oil,"A plant oil derived from the seeds and fruit of the Melia azadirachta, AKA Azadirachta indica, tree. Can cause skin sensitization."
+Bad,Papaya Extract,"Extract that is the source of papain, which theoretically can have exfoliating properties on skin."
+Bad,Pawpaw Extract,This plant extract has antioxidant properties but can also irritate skin.
+Bad,Perfluorodecalin,"Solvent and texture-enhancing ingredient that increases oxygen to skin, which may actually boost the presence of reactive oxygen species (ROS) in skin—the very thing antioxidants fight against."
+Bad,Perfluorohexane,"Solvent and texture-enhancing ingredient that increases oxygen to skin, which may actually boost the presence of reactive oxygen species (ROS) in skin—the very thing antioxidants fight against."
+Bad,Phenylpropanol ,Preservative and fragrant compound used as a masking scent in cosmetics. Potentially irritating to skin.
+Bad,Polyperfluoroperhydrophenanthrene,A solvent and potential PFAS that is often used as part of an ingredient blend.
+Bad,Polyvinyl Alcohol,"A synthetic polymer of vinyl alcohol that functions in cosmetics as a gel-based thickener, film-forming, and binding agent."
+Bad,Potassium Hydroxide,"Also known as lye, a highly alkaline ingredient used in small amounts in cosmetics."
+Bad,Potassium Myristate,Detergent cleansing agent that is a constituent of soap; it can be drying and aggravate skin for some.
+Bad,Quaternium-15,Formaldehyde-releasing preservative used in cosmetics. It can be a skin sensitizer.
+Bad,Quercus Robur (Oak) Root Extract,"A plant-derived ingredient rich in antioxidants that contains tannins, which denature proteins in skin’s surface, resulting in sensitization."
+Bad,Rosa Damascena Flower Water,"Fragrant solution obtained from the flowers of the damask rose, which poses a risk of irritation to skin."
+Bad,Sea Salt,"Can be effective as a topical scrub, but if left on skin it can increase the risk of a sensitized reaction."
+Bad,Silt,A sediment obtained from various bodies of water. Silt's absorbent nature helps it function to absorb excess surface oil.
+Bad,Sodium Laurate,This type of soap can cause irritation and lasting damage to skin’s barrier.
+Bad,Tanacetum Annuum Flower Oil,Fragrant essential oil (also known as blue tansy) that poses a risk of sensitizing skin.
+Bad,Vetiver Zizanoides Root Extract,Plant that may offer some beneficial properties but can also be a skin sensitizer due to fragrant components (depending on which part of the plant was used).
+Bad,Walnut Shell Powder,Abrasive used in scrub products; not preferred to polyethylene beads.
+Worst,Acetone,This solvent is commonly used as nail polish remover and can irritate skin and mucus membranes.
+Worst,Advanced Glycation Endproduct (AGE),"Advanced glycation endproducts, also known as AGEs, are caused by the body's major fuel source, namely glucose."
+Worst,Aerocarpus Santalinus,"Also known as red sandalwood, this fragrance ingredient poses a risk of irritating skin."
+Worst,AGE,"Advanced glycation endproducts are caused by the body's major fuel source, namely glucose."
+Worst,Albumen,
+Worst,Alcloxa,"More technically known as aluminum chlorhydroxy allantoinate, alcloxa has constricting properties."
+Worst,Alkaline,Anything with a pH higher than 7 is alkaline; a pH below 7 is acidic.
+Worst,Alpha Isomethyl Ionone,Alpha isomethyl ionone is a fragrance ingredient that must be listed on products that contain it due to its risk of causing a sensitized reaction.
+Worst,Aluminum Sulfate,It can sensitizing to skin.
+Worst,Ammonium Chloride,Alkaline salt used as a pH balancer in skincare products; it is not used in concentrations that...
+Worst,Amyl Cinnamal,Volatile fragrance ingredient known to be sensitizing to skin. Should be avoided.
+Worst,Amyl Cinnamate,Fragrant component.
+Worst,Amyl Salicylate,Fragrant component.
+Worst,Amyris Oil,Fragrant oil. It has no other known benefit for skin.
+Worst,Anacyclus Pyrethrum,Plant whose root extract can cause skin sensitivity.
+Worst,Angelica Archangelica Root Oil,Volatile oil obtained from the angelica plant. The oil contains chemical constituents that can be phototoxic.
+Worst,Angelica Polymorpha Sinensis Root Extract,"This plant extract is related to ginger, and like ginger it poses a risk of irritating skin."
+Worst,Anisaldehyde,Synthetic fragrance used in cosmetics.
+Worst,Anise,"Also known as aniseed, it can have antioxidant properties."
+Worst,Arnica Extract,Extract from the plant Arnica montana.
+Worst,Awapuhi,English name for wild ginger.
+Worst,Balm Mint Extract,Extract derived from a fragrant plant; it poses some risk of causing skin sensitivity.
+Worst,Balsam Peru,Fatty resin that when applied topically can cause skin sensitivity.
+Worst,Bay Leaf Oil,Fragrant volatile oil and plant extract taken from the Laurus nobilis plant that can sensitize skin.
+Worst,Bee Pollen,Can have antioxidant properties.
+Worst,Benzoin Extract,Balsam resin that has some fragrant properties; it may also be sensitizing to skin.
+Worst,Benzyl Benzoate,Benzyl benzoate is a volatile fragrance ingredient and solvent with documented skin irritancy effects.
+Worst,Benzyl Salicylate,"A volatile fragrance chemical with a sweet, floral odor used to impart scent to cosmetic products and perfumes."
+Worst,Bergamot Oil,"A volatile citrus oil that, when used topically, is a photosensitizer."
+Worst,Bitter Orange Flower,"Used topically, this ingredient's methanol content makes it potentially sensitizing for skin."
+Worst,Black Locust Extract,"Extract that can have antioxidant properties, although it also may have harmful components."
+Worst,Black Pepper Extract And Oil,It can cause significant skin sensitivity...
+Worst,Bois De Rose Oil,Mainly used as a fragrance and flavoring ingredient; there's no research pertaining to its benefit for skin.
+Worst,Borate,Group of compounds used in cosmetics in small quantities primarily as pH adjusters.
+Worst,Borax,"Also known as sodium borate decahydrate, borax is a mineral composed of sodium, boron, oxygen, and water."
+Worst,Boswellia Carterii,"This volatile oil, also known as frankincense, can be a skin sensitizer. There is no evidence showing it has benefit for skin."
+Worst,Bronopol,"Technical name 2-bromo-2-nitropropane-1,3-diol, a formaldehyde-releasing preservative."
+Worst,Butylphenyl Methylpropional,Fragrant ingredient whose floral-like scent can cause skin irritation and may also pose health risks when inhaled.
+Worst,Cajeputi Oil,This oil is derived from a tree that is in the same plant family as the source of tea tree oil.
+Worst,Calamine,"Preparation of zinc carbonate, colored with ferric oxide (a form of rust)."
+Worst,Camphor,Aromatic substance obtained from the wood of a tree common to Southeast Asia.
+Worst,Cananga Extract,"Fragrance used in cosmetics; it can be sensitizing to skin, much like ylang ylang."
+Worst,Cananga Odorata,"Fragrant, volatile oil (commonly known as ylang ylang) that can be a skin sensitizer."
+Worst,Cananga Odorata Flower Extract,"Fragrant, volatile oil that can also be a skin sensitizer."
+Worst,Capsaicin,"Component of capsicum. When used topically, capsaicin can prevent the transmission of pain."
+Worst,Capsicum,"Large group of plants consisting primarily of the pepper family, including chili peppers and..."
+Worst,Capsicum Oleoresin,Fatty resin derived from capsicum plants. It can be sensitizing to skin.
+Worst,Cardamom,"Plant of the ginger family, used as fragrance in cosmetics."
+Worst,Carvone,Essential oil used as a flavoring agent and fragrance component in cosmetics.
+Worst,Cedarwood,Fragrant plant extract. There is evidence that cedarwood oil is sensitizing.
+Worst,Cedrus Atlantica Bark Extract,Fragrant oil that can aggravate skin.
+Worst,Cinnamomum,"Can have antioxidant properties when applied to skin, but can aggravate skin."
+Worst,Cinnamomum Camphora,The Latin name for a tree common to Southeast Asia. Its extracts have the potential to irritate skin.
+Worst,Cinnamon,"Can have antioxidant properties when applied to skin, but can aggravate skin."
+Worst,Cinnamyl Alcohol,A volatile fragrance ingredient that contains extracts from cinnamon and balsam of Peru.
+Worst,Citronellol,"A volatile fragrance chemical extracted from geranium, rose, and other plants, citronellol has a characteristic grassy, citrus-like scent."
+Worst,Citrullus Colocynthis,Bitter apple; considered sensitizing to skin.
+Worst,Citrus Amara,Potential skin irritant.
+Worst,Citrus Aurantifolia,"As with all citrus extracts, this has antioxidant properties, but also contains components that can sensitize skin."
+Worst,Citrus Aurantium,Fragrant plant that is most sensitizing to skin in its oil form.
+Worst,Citrus Aurantium Extract,Bitter orange extract whose methanol content is potentially sensitizing for skin.
+Worst,Citrus Medica Limonum,"Plant that produces juices, extracts and oils that can cause skin sensitization due to volatile fragrant compounds, acidity and photosensitive compounds."
+Worst,Citrus Reticulata (Tangerine) Leaf Oil,"Fragrant, volatile citrus oil that can be a skin sensitizer."
+Worst,Clary Oil,Used as fragrance; can be a skin sensitizer.
+Worst,Clove Leaf,"This leaf, its oil, and it extract can be potent skin sentizers when applied repeatedly."
+Worst,Clove Oil,Potent skin sensitizer when applied repeatedly.
+Worst,Clover Blossom,"Contains eugenol, which can be a skin sensitizer and cause photosensitivity."
+Worst,Clover Leaf Oil,Fragrant plant oil that has the potential to irritate skin.
+Worst,Coleus Barbatus,Member of the mint family and also known as forskolin; can be a skin sensitizer.
+Worst,Colloidal Silver,Refers to ground-up silver suspended in solution.
+Worst,Comfrey Extract,The alkaloid content of this extract means it has the potential to aggravate skin.
+Worst,Commiphora Myrrha Extract,Fragrant gum resin that can be a skin sensitizer.
+Worst,Copaifera Officinalis,Fatty resin that when applied topically can cause skin sensitivity.
+Worst,Cornmint,Also known as wild mint; it can be sensitizing to skin.
+Worst,Cyclamen Aldehyde,Synthetic fragrant component in products; it can aggravate skin.
+Worst,Cymbopogon Citrates,"Plant that can have beneficial properties, but it also may be a skin sensitizer."
+Worst,Cymbopogon Martini,"Plant that can have beneficial properties, but it also may be a skin sensitizer."
+Worst,Daucus Carota,"Also known as wild carrot. It can have antioxidant properties, but applied topically it can cause sensitivity."
+Worst,Denatured Alcohol,Denatured alcohol has solvent and texture-enhancing properties in cosmetics but has proven to damage and dehydrate skin.
+Worst,Dimethyl Ether,Colorless gas used as a propellant in aerosol products. It is potentially harmful if inhaled.
+Worst,Elecampane,Latin name Inula helenium; it is a plant that can be very sensitizing to the skin.
+Worst,English Ivy Extract,Plant extract that can be a skin sensitizer due to its stimulant and astringent (skin-constricting) properties.
+Worst,Environmental Damage,Occurrence that takes place at an atomic level and is a complex physiological process.
+Worst,Esculin,"Component of horse chestnut, it is considered harmful and is not recommended for skin."
+Worst,Essential Oil,"Also known as volatile oil, a fluid that is derived primarily from plants and used in cosmetics primarily as fragrance."
+Worst,Ethanol,Denatured alcohol used as a solvent. It can be drying and sensitizing to skin when one of the main ingredients in the formula.
+Worst,Ethylene Brassylate,"Synthetic fragrance ingredient used to impart a sweet, musky odor to cosmetics. Can irritate skin."
+Worst,Eucalyptus Extract,"Extract that may have beneficial properties on the skin. Despite those benefits, it's also a skin sensitizer, particularly on abraded skin."
+Worst,Eucalyptus Oil,Fragrant plant oil whose active constituents are found in the leaves and the oil obtained from them.
+Worst,Eugenia Aromatica,"Also known as clove, the leaf, oil, and extract from this plant can be potent skin sentizers when applied repeatedly."
+Worst,Eugenia Caryophyllus,"Potential skin sensitizer, especially in the oil form."
+Worst,Eugenol,Fragrance chemical that occurs naturally in some plant ingredients.
+Worst,Fennel Oil,"Volatile, fragrant oil that can cause skin sensitivity."
+Worst,Fennel Seed Extract,"Can have antioxidant properties, but on skin it can be a skin sensitizer."
+Worst,Ferula Galbaniflua,"Fragrant substance that, because of its resin and volatile oil content, can be extremely sensitizing."
+Worst,Fir Needle Oil,"Volatile, fragrant oil that can cause skin sensitivity."
+Worst,Floralozone,One of a number of synthetic fragrant components.
+Worst,Foeniculum Vulgare Extract,"Can have antioxidant properties, but on skin it can be a sensitizer."
+Worst,Fragrance,One or a blend of volatile and/or fragrant plant oils (or synthetically derived oils) that impart aroma and odor to products.
+Worst,Frankincense Extract,Fragrant component used in skin care products; it can be a skin sensitizer.
+Worst,Gardenia Florida Extract,Flower extract used in cosmetics to impart fragrance; also functions as an antioxidant.
+Worst,Gaultheria procumbens (wintergreen) leaf oil,A type of mint that is often used for addressing the discomfort of sore muscles but can also be very sensitizing to skin.
+Worst,Geranium Oil,Fragrant oil that can have beneficial properties but also can be a skin sensitizer.
+Worst,Geranium Pratense,Geranium plant.
+Worst,Ginger Oil,"A fragrant plant oil that, depending on the species, can contain dozens of volatile compounds that have a known or potential risk to sensitize skin."
+Worst,Grapefruit Oil,Citrus oil whose volatile components (chiefly substances known as furocoumarins) are sensitizing.
+Worst,Grapefruit Peel Extract,"Typically listed as Citrus paradisi (grapefruit) peel extract on ingredient lists, the peel from this fruit is loaded with a class of ingredients which are primarily responsible for what's known as a phototoxic reaction."
+Worst,Grapefruit Seed Extract,"Labelled as Citrus paradisi (grapefruit) seed extract, this is often claimed as a natural preservative."
+Worst,Hamamelis Virginiana,Plant extract that can deliver antioxidant properties but is also sensitizing if used repeatedly because it denatures proteins that help keep skin healthy.
+Worst,Hamamelitannin,Tannin that is found in witch hazel. It can be a skin sensitizer but it also has antioxidant properties.
+Worst,Hayflower Extract,"Plant extract that, due to its constricting effect on skin, can be sensitizing."
+Worst,Hedera Helix,Plant extract that can be a skin sensitizer due to its stimulant and astringent (skin-constricting) properties.
+Worst,Hedione,"Synthetic fragrant component in products, which also can be a skin sensitizer."
+Worst,Hexyl Cinnamal,A fragrance ingredient used in many perfumes and often seen in fragranced skin care products.
+Worst,Horse Elder,Latin name Inula helenium; it is a plant that can be very sensitizing to the skin.
+Worst,Horseradish,Plant that can sensitize skin and should never be applied to abraded skin.
+Worst,Ho Wood Oil,A fragrant essential oil derived from the bark of the camphor tree that contains skin-sensitizing compounds like linalool and camphor.
+Worst,Hydnocarpus Anthelmintica,Potential skin irritant
+Worst,Hydrastis Canadenis,"Also known as goldenseal, this plant extract can irritate skin."
+Worst,Hydrogen Peroxide,There is a great deal of current research showing that hydrogen peroxide is problematic as a topically applied product.
+Worst,Hydroxycitronellal,Synthetic fragrance compound with a floral scent that’s derived from the volatile citronellol. It can cause skin sensitization.
+Worst,Illicium Verum Anise Fruit Extract,"Also known as aniseed, it can have antioxidant properties, but its fragrant components make this a potential skin sensitizer."
+Worst,Inula Helenium,This plant can be very sensitizing to the skin.
+Worst,Inula Helenium Extract,This plant extract can be very sensitizing to the skin.
+Worst,Iris Florentina Extract,Potential skin irritant due to its fragrant component.
+Worst,Iris Florentina Root,Used primarily as a fragrant component due to its violet-like scent.
+Worst,Irritants,"These ingredients, whether it’s noticeable or not, do damage to skin over time that can lead to increased dryness, breakouts, and redness."
+Worst,Isopropyl Alcohol,"Also known as rubbing alcohol, this type of alcohol is known to be drying/sensitizing to skin when listed among the main ingredients in a formula."
+Worst,Ivy Extract,Plant extract that can be sensitizing due to its astringent (skin-constricting) properties.
+Worst,Jasmine Oil,"Fragrant oil, often used as a source of perfume, that can be a skin sensitizer."
+Worst,Jasminium Grandiflorum,"Commonly known as jasmine, this contains volatile fragrance chemicals (chiefly linalool) that can be skin sensitizers."
+Worst,Jonquil Extract,Fragrant plant extract that poses a strong risk of skin sensitization.
+Worst,Juniper Berry,"This plant, can have soothing properties, but can result in skin sensitivity if applied repeatedly."
+Worst,Juniperus Communis,"This plant, also known as juniper, can have soothing properties, but can result in skin sensitivity if applied repeatedly."
+Worst,Kathon CG,"Combination of methylchloroisothiazolinone and methylisothiazolinone, which offers preservative benefit. Introduced into cosmetics in the mid-1970s, it elicited a great number of sensitizations in consumers. This led to it not being included in cosmetics other than rinse-off products. "
+Worst,Kava-Kava Extract,A plant extract taken from the roots or stump of the Piper methysticum plant that causes skin sensitivity when applied or ingested.
+Worst,Kawa Extract,"Plant extract, AKA kava-kava extract, that can cause redness, itchiness and skin sensitivity when applied or ingested."
+Worst,Lady's Mantle Extract,"Plant extract with antioxidants, among them skin-sensitizing tannins."
+Worst,Laurus Nobilis,Plant whose extracts and oils contain volatile fragrant compounds that can cause skin irritation.
+Worst,Lavandin Oil,A hybrid lavender oil that contains volatile and skin-sensitizing aromatic compounds.
+Worst,Lavandula Angustifolia,"A plant, AKA lavender, whose aromatic extracts and oils can cause skin sensitization."
+Worst,Lavandula Officinalis,"Previous name for Lavandula angustifolia, AKA lavender. Contains volatile fragrant compounds that can sensitize skin."
+Worst,Lavender Extract And Oil,Fragrant ingredients taken from the Lavandula angustifolia plant that can cause skin sensitization.
+Worst,Lemon,"AKA Citrus limon and Citrus media limonum, lemon can cause skin sensitivity due to photosensitive compounds, it’s high acidity and volatile fragrance chemicals."
+Worst,Lemon Balm,"This type of herb comes from the mint family. Though it has antioxidant properties, it also poses a risk of skin irritation due to its fragrant components."
+Worst,Lemongrass Extract,"Extract that can have beneficial properties, but it also may be a skin sensitizer."
+Worst,Lemongrass Oil,Also known as Oil of Verbena; can be effective as a mosquito repellent.
+Worst,Lemon Juice,Highly acidic citrus based juice that can cause skin sensitization due to volatile compounds and a low pH.
+Worst,Lemon Oil,"Commonly used citrus oil that can be a skin sensitizer, especially on abraded skin."
+Worst,Levisticum Officinale Root Extract,"Plant extract, AKA lovage root extract, that contains volatile fragrant compounds known to irritate skin."
+Worst,Lime Oil And Extract,Citrus fruit whose volatile compounds are sensitizing.
+Worst,Limonene,A volatile chemical compound often found in citrus oils. It’s used as a fragrance and solvent but can sensitize skin.
+Worst,Linalool,"A plant-derived fragrant compound that can cause skin sensitization, especially when exposed to air."
+Worst,Litsea Cubeba,"The litsea or may chang plant produces fragrant essential oils whose aromatic compounds, like citral, are known to irritate skin."
+Worst,Litsea Cubeba Fruit Extract,Fragrant volatile oil and plant extract taken from the fruits of the Litsea cubeba plant that can sensitize skin.
+Worst,Lovage Root Extract,"Plant extract, AKA Levisticum officinale root extract, that contains volatile fragrant compounds known to irritate skin."
+Worst,Lye,A highly alkaline ingredient used in small amounts in cosmetics.
+Worst,Mandarin Orange Oil Or Extract,Primarily used as a fragrance; it can be a skin sensitizer.
+Worst,Marjoram,The essential oils and extracts taken from the Origanum majorana plant contain volatile aromatic compounds which can sensitize skin.
+Worst,Melaleuca Cajeputi Oil,"A volatile, plant-derived oil primarily used as a perfuming agent. This oil contains fragrant compounds like cineole, linalool and terpineol that can sensitize skin."
+Worst,Melissa Officinalis,"Herb from the mint family commonly known as lemon balm. Though it has antioxidant properties, it also poses a risk of skin irritation due to its fragrant components."
+Worst,Mentha Arvensis,Mint plant that can be sensitizing to skin.
+Worst,Mentha Piperita,"Both the oil and the extract can have disinfectant properties, but they can also have a sensitizing effect on skin."
+Worst,Mentha Spicata,"Also known as spearmint, this is the source of a volatile oil that can be sensitizing when applied topically to skin."
+Worst,Mentha Viridis,A type of mint that has antioxidant properties but is also an irritant when applied topically.
+Worst,Menthol,Skin sensitizing plant extract derived from peppermint used largely for its scent and its unique cooling sensation when applied topically.
+Worst,Menthone,Skin-sensitizing plant extract commonly derived from peppermint used largely for its scent and unique cooling sensation when applied topically.
+Worst,Menthoxypropanediol,Menthoxypropanediol is a fragrant and cooling cosmetics ingredient most often used in lip care that can cause skin sensitization.
+Worst,Menthyl Lactate,"Menthyl lactate is an ester of menthol used in skin care and cosmetics for its scent and cooling effect, but it can cause sensitivity."
+Worst,Methanol,"Methanol is a volatile, organic alcohol used to help denature other forms of alcohol. When used on its own, it’s toxic when inhaled, applied topically or ingested."
+Worst,Methylchloroisothiazolinone,Methylchloroisothiazolinone (MCI) is a skin sensitizing organic compound used as a preservative when combined with methylisothiazolinone.
+Worst,Methyldibromo Glutaronitrile,Methyldibromo glutaronitrile is a well-known skin sensitizer that has preservative properties.
+Worst,Methylisothiazolinone,Methylisothiazolinone (MI or MIT) is a skin sensitizing compound used as a preservative in cosmetics alongside methylchloroisothiazolinone (MCI).
+Worst,Methyl Salicylate ,"Also known as wintergreen oil, this ingredient is a skin irritant."
+Worst,Mint,"Mint, AKA Mentha, is a genus of plants often used in skin care for its fragrance. Some species in this genus are also used for their unique cooling sensation."
+Worst,Myrrh,Fragrant gum resin that can be a skin sensitizer. There is little research showing it has any benefit for skin.
+Worst,Narcissus Poeticus Flower Wax,"Fragrant cosmetic ingredient that contains volatile compounds, like benzyl benzoate and limonene, that can trigger skin sensitization. Also used as a texture enhancer."
+Worst,Neroli,Fragrant plant that is most sensitizing to skin in its oil form.
+Worst,Neroli Oil,Fragrant plant oil that can be a skin sensitizer.
+Worst,Olibanum Extract,Fragrant component used in skin care products; it can be a skin sensitizer.
+Worst,Orange Blossom,"A fragrant group of skin care ingredients (oils, extracts and waters) most commonly derived from the flowers of Citrus sinensis and Citrus aurantium orange trees whose volatile fragrant compounds can sensitize skin."
+Worst,Orchid,Fragrant flower that can be a skin sensitizer.
+Worst,Orchid Extract,Fragrant flower that can be a skin sensitizer.
+Worst,Oregano,"Has beneficial properties, but can also be a skin sensitizer."
+Worst,Origanum Majorana,A plant extract and volatile oil that contains skin-sensitizing aromatic compounds. Also known (and used in foods) as marjoram.
+Worst,Origanum Vulgare Flower Extract,"Has beneficial properties, but can also be a skin sensitizer."
+Worst,Orris Root,Used primarily as a fragrant component due to its violet-like scent.
+Worst,Palmarosa Oil,Fragrant oil that can have beneficial properties but also can be a skin sensitizer.
+Worst,Papain,"Enzyme extracted from papaya. Applied topically, papain can aggravate skin."
+Worst,Para-Aminobenzoic Acid (PABA),Sunscreen ingredient rarely used since the 1990s because of strong potential for sensitizing reactions.
+Worst,Parfum/Fragrance,"Another name for fragrance on a cosmetic ingredient label, often made up of numerous substances capable of sensitizing skin."
+Worst,Patchouli,Fragrant oil derived from mint. It contains eugenol and can aggravate skin.
+Worst,Paullinia Cupana Seed Extract,Herb that contains two and a half times more caffeine than coffee.
+Worst,Pelargonium Graveolens Oil,Fragrant oil (geranium) that can be a skin sensitizer.
+Worst,Pellitory,Plant whose root extract can cause skin sensitivity.
+Worst,Pentadecalactone,"Pentadecalactone is a sensitizing ingredient used in skin care as a fragrance or masking agent due to its musky, powdery scent."
+Worst,Peppermint,"Both the oil and the extract can have disinfectant properties, but they can also have a sensitizing effect on skin."
+Worst,Petitgrain Mandarin,This citrus plant has the potential to irritate skin due to its fragrance components.
+Worst,Photosensitizer,Ingredient that can cause the skin to have a sensitizing reaction when exposed to sunlight.
+Worst,Pine Oil,It can aggravate skin and should never be used on abraded or chafed skin.
+Worst,Pinus Lambertiana Wood Extract,Pine extract that may aggravate skin.
+Worst,Pinus Palustris Oil,It can aggravate skin and should never be used on abraded or chafed skin.
+Worst,Piper Nigrum,It can cause significant skin sensitivity.
+Worst,Pogostemon Cablin,Fragrant oil derived from mint. It contains eugenol and can aggravate skin.
+Worst,Potentilla Erecta Root Extract,"Plant that can be irritating due to its tannin content, which causes skin constriction."
+Worst,Pumice,This volcanic rock is highly abrasive and can cause skin barrier damage.
+Worst,Pyrus Cydonia,"More commonly known as quince, this plant has astringent properties and may cause skin sensitivity."
+Worst,Quercus,Refers to hundreds of species of oak. Extracts of Quercus can have beneficial properties but they can also be skin sensitizing. 
+Worst,Quercus Alba Bark Extract,The bark extract from a type of oak that can be sensitizing when applied topically.
+Worst,Quercus Infectoria Extract,This extract originating from a species of oak can cause skin sensitivity.
+Worst,Quince Seed,"Used as a thickening agent in cosmetics, but also has skin-constricting properties."
+Worst,Robinia Pseudacacia Extract,"Extract that can have antioxidant properties, although it also may have harmful components for skin."
+Worst,Rosa Damascena Flower Oil,Rose-derived essential oil with volatile fragrant compounds that pose a risk of irritation to skin.
+Worst,Rosa Damascena Oil,Oil of a very fragrant pink rose used as fragrance in cosmetics.
+Worst,Rosa Gallica Flower Extract,Fragrant extract.
+Worst,Rose Flower,Highly fragrant substance that can be a skin sensitizer.
+Worst,Rose Flower Oil,"Fragrant, volatile oil that can aggravate skin."
+Worst,Rosemary Oil,"This ingredient is used primarily as a fragrance in cosmetics, but the volatile chemicals that give it its fragrance (camphor is among them) are also capable of causing sensitivity when applied to skin."
+Worst,Rose Oil,"Fragrant, volatile oil that can aggravate skin."
+Worst,Rosewood Oil,Plant-derived oil that is used chiefly as a fragrance and flavoring ingredient; there's no research pertaining to its benefit for skin.
+Worst,Sandalwood Oil,"Fragrant oil (Latin name Santalum album) that can cause skin sensitivity, especially when used in pure concentrations."
+Worst,Sausurrea Oil,Also called costus oil. Volatile oil and fragrant component used in cosmetics; it can be a skin sensitizer.
+Worst,Sclareolide,Fermented from clary sage and used as a fragrant component in cosmetics.
+Worst,SD Alcohol,Denatured alcohol used as a solvent. It can be drying and sensitizing to skin when one of the main ingredients in the formula.
+Worst,SD Alcohol 40,Denatured alcohol used as a solvent. It can be drying and sensitizing to skin when one of the main ingredients in the formula.
+Worst,SD Alcohol 40-2,Denatured alcohol used as a solvent. It can be drying and sensitizing to skin when one of the main ingredients in the formula.
+Worst,Silver,"Metallic element that in cosmetics can have disinfecting properties; however, prolonged contact can turn skin grayish blue. Silver can be sensitizing to skin."
+Worst,Sisymbrium Irio Seed Oil,Essential oil whose fragrant compounds pose a risk of irritation to skin.
+Worst,Soap,"Most soaps are considered very drying due to their alkaline base (i.e., a pH over 8). Bar cleansers can be gentler than bar soaps, but are more often than not still drying, depending on their composition."
+Worst,Sodium Borate,A compound used in cosmetics in small quantities primarily as a pH adjuster.
+Worst,Sodium C14-16 Olefin Sulfonate,"Can be derived from coconut. Used primarily as a detergent cleansing agent, but is potentially drying and can aggravate skin."
+Worst,Sodium Carbonate,Absorbent salt used in cosmetics; it can also be a skin sensitizer.
+Worst,Sodium Cocoate,Used as a cleansing agent primarily in soaps. It can be drying and sensitizing for skin.
+Worst,Sodium Lauryl Sulfate,Versatile ingredient composed of several non-volatile alcohols. Functions primarily as a surfactant...
+Worst,Sodium Palmate,A soap ingredient created by the salts of acids derived from palm oil. May be naturally-derived or...
+Worst,Sodium Palm Kernelate,Cleansing agent that has the potential to irritate skin.
+Worst,Sodium Silicate,Highly alkaline and potentially sensitizing  mineral used in cosmetics...
+Worst,Sodium Tallowate,Sodium salt of tallow.
+Worst,Sodium Thioglycolate,"A synthetic ingredinet that functions as a reducing agent in cosmetics, most typically hair-removal lotions."
+Worst,Spearmint Oil,"Fragrant, volatile oil that can cause skin sensitivity."
+Worst,Star Anise,"Also known as aniseed, it can have antioxidant properties, but its fragrant components make this a potential skin sensitizer."
+Worst,Styrax Benzoin,Fragrant ingredient with the potential to irritate skin.
+Worst,Styrax Benzoin Resin Extract,Fragrant ingredient with the potential to irritate skin.
+Worst,Sulfur,"Sulfur has more negatives than positives for skin, and its use to treat skin concerns should be seen as a last resort if other ingredients (such as benzoyl peroxide, azelaic acid, and salicylic acid) don't work as well as you had hoped."
+Worst,Symphytum Officinale Extract,The alkaloid content of this extract means it has the potential to aggravate skin.
+Worst,Szechuan Peppercorn,"From a plant native to Szechuan Province in China. Szechuan pepper is known for the ""numbing"" sensation it produces on the tongue."
+Worst,Tallow,"Substance extracted from the fatty deposits of animals, often used to make candles and soap."
+Worst,Tangerine Oil,"Fragrant, volatile citrus oil that can be a skin sensitizer."
+Worst,TEA-Lauryl Sulfate,"Cleansing agent that's potentially drying, particularly when it's the primary cleansing ingredient where the concentration is likely to exceed 10.5%."
+Worst,Thyme Oil,"Source of potent antioxidants, but its fragrant components (which are part of the oil itself) pose a risk of sensitivity."
+Worst,Thymus Vulgaris Oil,"More commonly known as thyme oil. Like most fragrant plant oils, thyme is a source of potent antioxidants but its fragrant components (which are part of the oil itself) pose a risk of sensitivity."
+Worst,Tormentil Extract,"Plant that can be irritating due to its tannin content, which causes skin constriction."
+Worst,UVA,Ultraviolet A radiation comes from the sun and creates serious negative cumulative changes in skin.
+Worst,UVB,Ultraviolet B radiation.
+Worst,Verbena Extract,Fragrant extract that can be a skin sensitizer.
+Worst,Verbena Officinalis Leaf Extract,Fragrant extract that can be a skin sensitizer.
+Worst,Vetiver Oil or Extract,Fragrant component in skincare products that also has some beneficial properties.
+Worst,Volatile Oil,Group of volatile fluids derived primarily from plants and used in cosmetics primarily as fragrant.
+Worst,White Oak Bark Extract,Potentially irritating plant extract.
+Worst,Wild Ginger,"Plant that has antioxidant capabilities for skin, but whose oil can be a skin irritant."
+Worst,Witch Hazel,Plant extract that can deliver antioxidant properties but is also sensitizing if used repeatedly because it denatures proteins that help keep skin healthy.
+Worst,Xi Xin,"Best known as ginger, this plant can have soothing an antioxidant activity, but its oil form can be sensitizing."
+Worst,Ylang Ylang,"Fragrant, volatile oil that can be a skin sensitizer."
+Worst,Zanthoxylum Bungeanum Fruit Oil,"From a plant native to Szechuan Province in China. Known for the ""numbing"" sensation it produces."
+Worst,Zanthoxylum Piperitum,"A plant native to Szechuan Province in China. The Szechuan pepper that comes from it is known for the ""numbing"" sensation it produces on the tongue."
+Worst,Zanthoxylum Piperitum Fruit Extract,"From a plant native to Szechuan Province in China. Szechuan pepper is known for the ""numbing"" sensation it produces on the tongue."
+Worst,Zinc Carbonate,Can be sensitizing when applied to skin. Most well known for use in calamine.
+Worst,Zinc Sulfate,Chemical compound resulting from the interaction of zinc with sulfuric acid.
+Worst,Zingiberaceae,"Best known as ginger, this plant can have soothing an antioxidant activity, but its oil form can be sensitizing."
+Worst,Zingiber Zerumbet,"A type of ginger, it can have antioxidant properties for skin, but its oil is a skin irritant."
+Worst,Zingiber Zerumbet Extract,"Extract from a type of ginger, it can have antioxidant properties for skin, but its oil is a skin irritant."
