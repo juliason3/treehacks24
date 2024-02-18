@@ -3,14 +3,13 @@ import { Flex, Box } from 'reflexbox';
 
 export default function Summary() {
   const router = useRouter();
-  const { info } = router.query; // Example: you'll replace this with actual data
+  const { text } = router.query; // Get the extracted text from the query
 
   return (
     <Flex flexDirection="column" alignItems="center" justifyContent="center" height="100vh">
       <Box width={[1, 1/2, 1/4]} px={2}>
-        <h1>Sunscreen Summary</h1>
-        <p>Information: {info}</p>
-        {/* Display the actual sunscreen information here */}
+        <h1>Sunscreen Information</h1>
+        <p>{text}</p> {/* Display the extracted text here */}
       </Box>
     </Flex>
   );
