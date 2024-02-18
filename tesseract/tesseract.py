@@ -30,7 +30,7 @@ def load_chemicals_from_csv(filename):
     return chemicals
 
 # Set the path to Tesseract executable
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+#pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # Extract text from image using pytesseract
 def extract_text(image_path):
@@ -71,10 +71,10 @@ def store_data(ingredients, rating, warning):
 # Example usage
 if __name__ == "__main__":
     # Load chemical ingredients from CSV
-    chemical_ingredients = load_chemicals_from_csv("C:\\Users\\vijdi\\OneDrive\\Desktop\\CSProjects\\sunscreenify\\treehacks24\\tesseract\\safetydata.csv")
+    chemical_ingredients = load_chemicals_from_csv("/Users/kyliebach/treehacks24/tesseract/safetydata.csv")
 
     # Extract text from image
-    image_path = "C:\\Users\\vijdi\\OneDrive\\Desktop\\CSProjects\\sunscreenify\\treehacks24\\tesseract\\goodsense.jpg"
+    image_path = "/Users/kyliebach/treehacks24/tesseract/goodsense.jpg"
     text = extract_text(image_path)
     print("Extracted Text:")
     print(text)
