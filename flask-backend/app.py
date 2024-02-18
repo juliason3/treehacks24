@@ -1,62 +1,74 @@
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+from werkzeug.utils import secure_filename
 from PIL import Image
 import pytesseract
 import io
+import os
 
-SQLALCHEMY_DATABASE_URI = 'sqlite:///app.db' #MAKE SURE TO CHANGE THIS TO ACTUALL PATH 
-SQLALCHEMY_TRACK_MODIFICATIONS = False
+# Assume we're using the following structure for the FormData:
+# skinType: str, skinTone: str, skinConditions: list, image: file
 
-# Flask application configuration
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///your-database-name.db'  # Specify your database URI
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['UPLOAD_FOLDER'] = '/Users/kyliebach/treehacks24/upload'  # Configure this
 
-# Initialize database
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
-# Database model
-class User(db.Model):
+# Model to store user form data
+class UserProfile(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(80), unique=True, nullable=False)
-    email = db.Column(db.String(120), unique=True, nullable=False)
+    skinType = db.Column(db.String(50))
+    skinTone = db.Column(db.String(50))
+    skinConditions = db.Column(db.String(200))  # Comma-separated list
+    imagePath = db.Column(db.String(200))  # Path to the image
 
-    def __repr__(self):
-        return '<User %r>' % self.username
 
-# Image upload and text extraction route
+# Function to save image and return path
+def save_image(file):
+    filename = file.filename
+    filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+    file.save(filepath)
+    return filepath
+
 @app.route('/upload', methods=['POST'])
 def upload_file():
-    if 'file' not in request.files:
-        return jsonify(error="No file part"), 400
-    file = request.files['file']
-    if file.filename == '':
+    # Check if there is a file in the request
+    if 'image' not in request.files:
+        return jsonify(error="No image file part"), 400
+    image = request.files['image']
+    
+    # Validate the file is not empty
+    if image.filename == '':
         return jsonify(error="No selected file"), 400
-    if file:
-        img = Image.open(io.BytesIO(file.read()))
-        text = pytesseract.image_to_string(img)
-        
-        # Here you can add the text extraction result to the database
-        # For example, if you have a model for storing the results
+    
+    # Save the image and get its path
+    image_path = save_image(image)
+    
+    # Process the text fields from the form
+    skinType = request.form.get('skinType')
+    skinTone = request.form.get('skinTone')
+    # Assuming skinConditions are sent as multiple form fields with the same name
+    skinConditions = request.form.getlist('skinConditions')  # Returns a list of conditions
 
-        return jsonify(text=text), 200
-
-# User registration route
-@app.route('/register', methods=['GET', 'POST'])  # Consider using POST for actual registration
-def register():
-    # Example user - you would use form data in a real application
-    new_user = User(username='john doe', email='john@example.com')
-    db.session.add(new_user)
+    # Create a UserProfile instance
+    user_profile = UserProfile(
+        skinType=skinType,
+        skinTone=skinTone,
+        skinConditions=','.join(skinConditions),  # Join the list into a comma-separated string
+        imagePath=image_path  # Save the path where the image was saved
+    )
+    
+    # Add the new UserProfile to the session and commit to save to the database
+    db.session.add(user_profile)
     db.session.commit()
-    return 'User registered successfully!'
 
-# Home route
-@app.route('/')
-def hello_world():
-    return 'Hello, World!'
+    # Return a success response
+    return jsonify(success=True, profile_id=user_profile.id), 200
 
 if __name__ == '__main__':
-    db.create_all()  # Create database tables
+    db.create_all()
     app.run(debug=True)
