@@ -40,7 +40,7 @@ export default function Home() {
     data.append('image', formData.image);
 
     // Replace '/api/submit-form' with your actual Flask endpoint
-    const response = await fetch('/api/submit-form', {
+    const response = await fetch('/api/upload', {
       method: 'POST',
       body: data,
     });
@@ -72,7 +72,9 @@ export default function Home() {
     marginTop: '20px',
     width: '100%',
   };
+  
 
+  
   // Single return statement for the component
   return (
     <Flex flexDirection="column" alignItems="center" justifyContent="center" height="100vh">
@@ -112,6 +114,8 @@ export default function Home() {
             <label><input type="checkbox" value="acne" onChange={handleConditionChange} /> Acne</label>
             <label><input type="checkbox" value="rosacea" onChange={handleConditionChange} /> Rosacea</label>
             <label><input type="checkbox" value="dermatitis" onChange={handleConditionChange} /> Dermatitis</label>
+            <label><input type="checkbox" value="dermatitis" onChange={handleConditionChange} /> Eczema</label>
+            <label><input type="checkbox" value="dermatitis" onChange={handleConditionChange} /> Psoriasis</label>
             {/* ... more checkboxes for other conditions ... */}
           </Box>
         </fieldset>
@@ -131,6 +135,9 @@ export default function Home() {
       </Box>
     </Flex>
   );
+  
+
+  
 
 }
 
