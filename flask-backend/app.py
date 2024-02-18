@@ -7,6 +7,7 @@ import pytesseract
 import io
 import os
 
+print("hello")
 # Assume we're using the following structure for the FormData:
 # skinType: str, skinTone: str, skinConditions: list, image: file
 
