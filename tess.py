@@ -2,6 +2,7 @@ import cv2
 import pytesseract
 from fuzzywuzzy import fuzz
 import sqlite3
+import csv
 
 # Connect to the SQLite database
 connection = sqlite3.connect("sunscreen.db")
@@ -18,6 +19,15 @@ try:
     print("Table 'ingredients' created successfully")
 except sqlite3.Error as err:
     print(f"Error creating table: {err}")
+
+# Function to load chemical ingredients from CSV
+def load_chemicals_from_csv(filename):
+    chemicals = []
+    with open(filename, newline='') as csvfile:
+        reader = csv.reader(csvfile)
+        for row in reader:
+            chemicals.append(row[0].lower())  # Convert to lowercase for case-insensitive comparison
+    return chemicals
 
 # Set the path to Tesseract executable
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
@@ -68,7 +78,15 @@ if __name__ == "__main__":
     ingredients = extract_specific_words(text)
 
     if ingredients:
-        store_data(ingredients)
+        # Load chemical ingredients from CSV
+        chemical_ingredients = load_chemicals_from_csv("sschemicals.csv")
+
+        # Compare extracted ingredients with chemical ingredients
+        matching_ingredients = [ingredient for ingredient in ingredients if any(fuzz.partial_ratio(ingredient.lower(), chemical.lower()) >= 70 for chemical in chemical_ingredients)]
+
+        # Store matching ingredients in the database
+        if matching_ingredients:
+            store_data(matching_ingredients)
 
 # Close the cursor and connection
 cursor.close()
